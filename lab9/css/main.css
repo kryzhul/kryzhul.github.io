@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to bottom, rgb(115, 34, 153), rgb(82, 51, 223));
+}
+    
+img {
+    box-shadow: 1px 1px 20px black;
+    border-radius: 15px;
+    transition: 0.1s;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+    
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 20px black;
+}
+    
+.p1 {
+    margin-left: 17px;
+    margin-right: 0px;
+    margin-top: 20px;
+    float: left;
+    width: 23%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.p1::first-letter{
+    font-size: 35px;
+    color: red;
+}
+
+.dv1 {
+    display: inline-block;
+}
