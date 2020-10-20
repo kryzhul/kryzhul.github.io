@@ -1,0 +1,27 @@
+body {
+    background:linear-gradient(to bottom, rgb(29, 25, 49), rgb(9, 13, 34));
+    height: auto;
+    }
+  
+  a {
+    color: cornflowerblue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+    text-shadow: 5px 5px 30px cornflowerblue;
+    cursor: pointer;
+  }
+  .table1 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.head{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #04204F;
+}
