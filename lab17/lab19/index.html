@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script scr="https://kit.fontawesome.com/fe5438e1a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700.." rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+  <script src="external.js"></script>
+  <title>lab19</title>
+</head>
+
+<body>
+
+    <a class="back_to_top" title="Наверх">↑</a>
+
+    <script>
+        var goTopBtn = document.querySelector('.back_to_top');
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
+
+function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }
+
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 0);
+    }
+  }
+    </script>
+
+  <div class="level_1">
+          <div class="country_title" align="center" width="100%">Китай</div>
+      <div class="text_1" >
+        Китай — удивительная страна востока, которая полна своих тайн и загадок. Обширные территории Китая раскинулись на просторах Азии в её центральной и восточной частях. История этой азиатской страны исчисляется тысячелетиями. Сегодня эта страна хранит богатейшее историческое наследие прошлого и имеет многообещающие перспективы будущего. Здесь сплелись воедино верность традициям древней цивилизации и бешеный ритм жизни современных мегаполисов.
+      </div>
+  </div>
+
+  <div class="container1">
+        <div class="container__inner_image1">
+              <image src="buddism.jpg" width=100% alt="no_image"> 
+        </div>
+
+        <div class="container__inner_text1">
+              <h1 class="inner2_head" align="center" >Центр Буддизма Наньшань</h1>
+              <div class="text"  ><br>
+                Крупнейший в Азии Центр Буддизма Наньшань находится в одноименной Международной зоне туризма. Центр открыт в
+                1997 году. Здесь восстановлен древний буддийский храм и разбит огромный ландшафтный парк. В отдельном 
+                павильоне на территории парка бережно хранится самая большая в мире золотая статуя богини Гуаньинь весом 
+                140 кг. Она украшена драгоценными камнями и стоит на постаменте в виде цветка лотоса, 
+                изготовленного из белого драгоценного нефрита. Эта статуя не только включена в книгу рекордов Гиннеса, 
+                но она в то же время является величайшей буддийской святыней: в ней находятся частички праха Будды. 
+                Статуя состоит из золота, нефрита, жемчуга и других ценных камней. На создание статуи ушло 100 кг золота.
+
+              </div>
+        </div>
+  </div>
+
+  <br>  <br>
+
+ <div class="container1">
+        <div class="container__inner_text2">
+              <h1 class="inner2_head" align="center">Национальный парк Чжанцзяцзе</h1>
+              <div class="text" ><br>
+                Национальный парк Чжанцзяцзе юго-восточной провинции Хунань - первый 
+                национальный лесной парк государственного уровня Китая , был открыт в 1982 году. Это памятник Всемирного 
+                наследия ЮНЕСКО и самый знаменитый и посещаемый заповедник в стране. На  4940 гектарах парка возвышаются 243 
+                горы  и 3000 пиков и утесов удивительной формы, будто парящие в воздухе в результате выветривания песчаников 
+                и известняков. Вершины скал покрыты густыми шапками хвойных пород со средней высотой – 800 метров, 
+                встречаются и трехкилометровые гиганты. Самая популярная смотровая площадка, 
+                Хуанши, поднимается над уровнем моря на 1300 м, к ней ведут ровно 3800 ступеней. Когда в горы приходит туман 
+                и под ногами тают облака, атмосфера в парке становится 
+                особенно волшебной, сюрреалистичной.   Многие, увидев  «Аватар» Джеймса Камерона, оценили нереальность 
+                пейзажей планеты Пандоры, в  основу ландшафта которой  легла гора Цзянькуньчжу и горная гряда  Хуаншань. 
+                Гора Цзянькуньчжу (высотой 1080 метров над уровнем моря) была переименовали в 
+                Гору-Аллилуйя-Из-Аватара, а начиная с 2010 года китайские мастера стали создавать уникальные гигантские 
+                «гаджеты» в парке для того, чтобы все желающие могли увидеть «Летящие горы Аватара». 
+
+              </div>
+        </div>
+
+        <div class="container__inner_image2">
+              <image src="gory.jpg" width=100% alt="no_image">
+        </div>
+  </div>
+
+  
+
+</body>
+</html>
+</html>
