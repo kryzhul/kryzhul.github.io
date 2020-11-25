@@ -1,0 +1,278 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>lab21</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section_content {
+            background: rgba(247, 227, 43, 0.993);
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 15px;
+            
+            font-size: 45px;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            color: rgb(15, 15, 15);
+            position: static;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .left,
+        .right {
+            display: block;
+            padding: 20px;
+            align-self: baseline;
+        }
+
+        img {
+            transition: .2s;
+            border-radius: 60px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 3px 3px 15px black;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: justify;
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+
+        .middle {
+            display: block;
+            margin: 5%;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+        }
+
+        .images img {
+            margin: 5px;
+        }
+
+        *,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section__time {
+    height: 50vh;
+    background: url(illuz2.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section__time-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    text-shadow: 3px 3px 7px rgb(247, 227, 43);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+}
+
+.section__time-clock {
+    display: flex;
+    justify-content: center;
+}
+
+.clock__hours, .clock__minutes, .clock__seconds {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(247, 227, 43, 0.993);
+    border-radius: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+
+    color: #000000d2;
+    font-size: 80px;
+    text-align: center; 
+}
+
+.section__form {
+    height: 10vh;
+    background-color:black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.section__form:after{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.button__popup {
+    border: 2px solid rgba(247, 227, 43, 0.993);
+    background-color: transparent;
+    padding: 20px;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 30px;
+    color: rgba(247, 227, 43, 0.993);
+    font-family: 'Courier New', Courier, monospace;
+    
+    transition: all .2s linear;
+}
+
+.button__popup:focus{
+    outline: none;
+}
+
+.button__popup:hover {
+    background-color: rgba(247, 227, 43, 0.993);
+    color: #373737;
+}
+.keanu__img {
+    width: 900px;
+    height: 600px;
+    background: url(zerkal.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#close {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="section__time">
+        <div class="container">
+            
+            <h2 class="section__time-title">
+                Time
+            </h2>
+            <div class="section__time-clock">
+                <div class="clock__hours" id="hours">
+
+                </div>
+                <div class="clock__minutes" id="minutes">
+
+                </div>
+
+                <div class="clock__seconds" id="seconds">
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section_content">
+    <div id="content">
+        <h2>Яёи Кусама: больше, чем искусство</h2>
+        <div class="main">
+            <div class="left">
+                <img src="photo2.jpg" width="500px" height="650px">
+            </div>
+            <div class="center">
+                <p>Японская художница Яёи Кусама (р. 22 марта 1929) — настоящая поп-звезда. Одна из самых знаменитых и высокооплачиваемых на рынке художников (цена произведения — до 7 млн долларов), с карьерой, охватывающей более 60 лет, Кусама любима за свои захватывающие инсталляции, которые исследуют идеи бесконечности и забвения. Всю жизнь Кусама создает искусство, которое неуклонно сопротивляется категоризации. В интервью Tate Modern Кусама сказала, что мать выбросила все ее краски и рисунки, когда ей было 10, сказав, что Яёи должна начать готовиться к тому, чтобы стать домохозяйкой. Но Кусама была бы никем, если бы не была настойчивой. В 1948 году она поступила в Киотскую городскую школу искусств и ремесел. И была достаточно смелой, чтобы увлечься сюрреализмом.</p>
+            </div>
+            <div class="right">
+                <img src="photo3.jpg" width="700px" height="550px">
+            </div>
+        </div>
+        <div class="middle">
+            <p>В конце 1950-х годов появление художницы из Японии с большими амбициями и в кимоно даже для Нью-Йорка было довольно экзотично. Кусаму стали замечать, выставлять на групповых выставках вместе с Дональдом Джаддом, Джеймсом Розенквистом и Энди Уорхолом (который не раз воровал идеи оригинальной художницы). Помимо живописи точек и «сетей бесконечности», созвучных абстрактному экспрессионизму, Кусама в начале 1960-х делала инсталляции с предметами. В центре города она устраивала художественные хэппенинги и антивоенные перформансы. Яёи привлекала внимание нью-йоркцев собственноручно сделанными нарядами, раскрашенными флюрной краской, японскими традиционными одеждами и сумасшедшими аксессуарами. Свои работы Кусама наполняет автобиографическим, психологическим и сексуальным содержанием. Навязчивые узоры из горошин и сеток ссылаются на серию слуховых и визуальных галлюцинаций, которые преследовали художницу на протяжении большей части жизни. Этот узор у неё встречается часто и в картинах, и в инсталляциях. «У горошка форма солнца, а оно – символ энергии всего мира и нашей жизни, а ещё он выглядит как луна; она такая спокойная. Круглый, мягкий, яркий, бессмысленный и несведущий. Горошек начинает двигаться... точки горошка – это путь к бесконечности», – говорит Кусама.
+
+                Она считает, что искусство должно приносить удовольствие и радовать окружающих, а тревоги превращать в чудесные «поля бесконечности».  </p>
+            <div class="images">
+                <img src="scale_1200.jpeg" width="350px" height="300px">
+                <img src="p2.jpeg" width="400px" height="300px">
+                <img src="p4.jpg" width="400px" height="300px">
+                <img src="p1.jpeg" width="400px" height="300px">
+                <img src="p6.jpeg" width="400px" height="300px">
+                <img src="p7.jpeg" width="400px" height="300px">
+            </div>
+            <p>Сегодня ради того, чтобы создавать свое искусство, она покидает утром психиатрическую клинику и возращается туда после 12-часового рабочего дня. Она уверена: искусство сохраняет жизнь.</p>
+        </div>
+        
+</section>
+
+    <section class="section__form">
+        <button class="button__popup" id="button__popup">
+            Инсталляция "Бесконечная зеркальная комната"
+        </button>
+        
+    </section>   
+
+    <script src="script.js"></script>
+</body>
+</body>
+
+</html>
