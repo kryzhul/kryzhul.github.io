@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-weight: 400;
+    color: #f3e3f2;
+    font-family: Andale Mono, monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section__time {
+    height: 100vh;
+    background: #000 url(фон2.jpg) center center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.browser__version-title {
+    font-size: 55px;
+
+    cursor: pointer;
+}
+
+.browser__version-title:hover{
+    color: #d6dbf8;
+}
+
+.browser__version-content {
+    opacity: 0;
+
+}
+
+.section__time-title {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.section__time-clock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.clock__hours, .clock__minutes, .clock__seconds {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+
+    color: #f7bdef;
+    font-size: 80px;
+    text-align: center; 
+}
+
+.textarea {
+    border: 2px solid #bb37c0;
+    font-size: 30px;
+    padding: 10px;
+    font-family: inherit;
+    margin-bottom: 25px;
+    resize: none;
+    width: 250px;
+
+    transition: all .1s ease;
+}
+
+.textarea:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+#array{
+    width: 450px;
+}
+
+.button {
+    border: 2px solid #bb37c0;
+    font-size: 24px;
+    padding: 10px;
+    font-family: inherit;
+    margin-bottom: 25px;
+    background-color: rgb(194, 211, 247);
+    margin-bottom: 25px;
+    transition: all .1s ease;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    outline: none;
+    border: 2px solid white;
+    color: white;
+}
