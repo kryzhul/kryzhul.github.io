@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section__time">
+        <div class="container">
+             <h2 class="section__time-title">
+                    Time:
+            </h2>
+            <div class="section__time-clock">
+                <div class="clock__hours" id="hours">
+    
+                </div>
+                <div class="clock__minutes" id="minutes">
+    
+                </div>
+    
+                <div class="clock__seconds" id="seconds">
+    
+                </div>
+            </div>
+            <div class="browser__version">
+                <h2 class="browser__version-title">
+                    Browser version:
+                </h2>
+                <p class="browser__version-content">
+
+                </p>
+            </div>
+
+           
+        </div>
+
+        <FORM>
+
+        
+
+          <form action="">
+            <input type="button" value="window.confirm" class="header__signin" onclick="if (window.confirm('window.confirm')==true)
+            {window.alert('true')}
+        else {window.alert('false')}">
+        </form>
+        <button button class="header__signin" onclick="winOp()">window.open</button>
+    
+    
+    
+        <script>
+            function winOp() {
+               let newW = window.open('', 'gif', 'height=600, width=700, top=10,left=10')
+               newW.document.write('<img height="350px" width="500px" src="tenor.gif">')
+               newW.document.write('<button style="padding: 10px 20px; font-size: 18px;" onclick="window.close()">close</button>')
+            }
+           
+        </script>
+      
+          <script>
+            'use strict';
+            let name = prompt("Введите ваше имя", "");
+            alert(name);
+          </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
