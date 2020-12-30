@@ -1,0 +1,280 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.75em;
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #3a3939;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    font-family: 'Nerko One', cursive;
+    background: url("pictures/fon.jpg") 50%/cover no-repeat fixed;
+}
+
+/*Fisrt page*/
+#header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_inner {
+    color: #b1acac;
+    text-shadow: 0 0 0.5px rgba(34, 33, 33, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50vh;
+    padding: 45px;
+    box-shadow: 1px 1px 15px #3a3939;
+}
+
+.header_inner h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding: 15px;
+    text-align: center;
+    border-top: dashed 2px #3a3939;
+    border-bottom: dashed 2px #3a3939;
+}
+
+.header_inner h1:before {
+    content: '';
+    display: block;
+    width: 50%;
+}
+
+.header_inner a {
+    text-decoration: none;
+    color: #b1acac;
+    transition: .3s;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.header_inner a:hover {
+    background-color: #3a3939;
+    color: #fff;
+}
+
+/*Second page*/
+#second {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    position: relative;
+    opacity: 0.7;
+    color: whitesmoke;
+}
+
+#second h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#second p {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.75em;
+    padding: 20px 100px 0;
+}
+
+/*Third page*/
+#third {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    position: relative;
+    opacity: 0.9;
+    color: whitesmoke;
+}
+
+.third_inner {
+    text-align: center;
+}
+
+.third_inner img {
+    height: auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+/*Fourth page*/
+#fourth {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background: #000;
+    position: relative;
+    opacity: 0.8;
+    color: whitesmoke;
+    flex-wrap: wrap;
+}
+
+.fourth_inner {
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+.fourth_inner img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#five {
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background: #000;
+    position: relative;
+    opacity: 0.8;
+    color: #fff;
+}
+
+#five a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#five a:hover {
+    background-color: #fff;
+    color: #3a3939;
+}
+
+@media (min-width: 1900px) {
+    .header_inner h1 {
+        font-size: 100px;
+    }
+
+    .header_inner a {
+        font-size: 40px;
+    }
+
+    #second h2 {
+        font-size: 90px;
+    }
+
+    #second p {
+        font-size: 40px;
+    }
+
+    #five a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header_inner h1 {
+        font-size: 90px;
+    }
+
+    .header_inner a {
+        font-size: 30px;
+    }
+
+    .header_inner {
+        width: 70%;
+    }
+
+    #second h2 {
+        font-size: 70px;
+    }
+
+    #second p {
+        font-size: 30px;
+    }
+
+    #fourth {
+        height: 100%;
+    }
+
+    .fourth_inner {
+        width: 55%;
+    }
+
+    #five a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 880px) {
+    #second h2 {
+        font-size: 40px;
+    }
+
+    #second p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header_inner h1 {
+        font-size: 70px;
+    }
+
+    #second p {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_inner h1 {
+        font-size: 50px;
+    }
+
+    .header_inner a {
+        text-align: center;
+    }
+
+    #second h2 {
+        font-size: 30px;
+    }
+
+    #second p {
+        font-size: 16px;
+    }
+
+    #third {
+        height: 100%;
+    }
+
+    .third_inner img {
+        width: 90%;
+        height: auto;
+    }
+
+    #five a {
+        text-align: center;
+        font-size: 30px;
+    }
+}
